@@ -1,0 +1,110 @@
+[Sender pint of view]
+-Suppose you have created a new file in the project say description.txt
+-Create a new branch day doc
+  $ git branch doc
+  $ git checkout doc // it takes us to doc branch
+-Add content in doc.txt
+  "This is docs for program
+  You can enter Name, Address
+  and country"
+-$ git status-- It shows that there is a modification in the project
+-Add
+  $ git add .//add to staging area
+-$ git diff --staged
+   Difference is shown i.e the new file added is shown
+-Commit: $ git commit -m "Doc added"
+-$ git log --oneline
+   The hash of Doc Added commit is shown (say 2bfd20f)
+    
+-goto master: $ git checkout master
+-Now  merge: $ git merge --no-ff doc (No fast forward)
+-Now you can write your own message as
+  "Merge branch doc to master branch"
+-Now press :wq - it writes and quits the program.
+
+-$ git log --oneline
+  You can see new hash value of merged doc file
+
+-To see which branch is merged:
+  $ git branch -- mergerd
+
+-To see which branch in um=nmergerd
+  $ git branch --no-mergerd
+********************************************
+
+*To send the branch in remote repository i.e in github
+
+-goto branch which you want to send to remote repository
+-$ git checkout doc //takes us to doc branch
+-$ git push origin doc : A new branch is created on the repository i.e github
+-To see the list of branches
+  $ git remote show origin //dislays all the branches present in the repository
+
+***********************************************
+
+*Tagging :  to make the project work
+
+-say there is main file called main.py where text "Akash khadka" has been inserted and 
+ has already been pushed to github
+-Now lets mofify the file and write a python program
+-Now goto master branch : $ git checkout master
+-$ git status --modified file found
+-$ git diff --shows "Akash Khadka" removed and code added is shown
+-commit: $ git commit -am "Main file done"
+
+-To see the result
+   $ python main.py
+    -The answer is displayed.
+
+-Now to pulish as a version 1 as one program is finished
+   $ git tag -a v.1 -m "Stable version published"
+-To see the tags
+   $git tag
+
+*******************
+
+*Adding new file for version2
+
+-Add a new file in project (mod_work.py) foe=r modulus calculation.
+-then $ git status -changes is shown
+-There may be cache file "_pycache" that has benn created inside the project folder
+ that are not meant to be pushed inside the repository
+-Created a new file and name it .gitignore and inside it write
+     _pucache_/ //now this file doesn't goto repository
+-To not add ".env" file that contains password in repository
+-Create hello.env and password.env file in the project
+  inside password.env
+	write your password "MyPassword" inside this file
+  inside .gitignore
+     *.env
+     !hello.env //except this env file others can't be stored in repository
+-$ git status
+   files to be committed:
+   .gitignore
+   hello.env
+   mod_work.py
+-$ git commit -am "Modulus work and git ignore work added"
+-push: $ git push origin master
+
+-Now ew can see password.env is not inserted while hello.env has been added
+ to repository.
+
+*****************************************
+
+*How to goto version1
+- $git checkout v.1
+
+-Files like gitignore, hello.env and mod_work.py has been deleted.
+
+-Now to publish version1
+  $ git checkout master
+  $ git push origin v.1 
+-Now we can see v1 tag inside tags in repository which can be downloaded as 
+ zip file
+
+-To delete
+  $ git tag -d v.1
+
+-To see who has done what work
+  $git log --author "Akash-Khadka" --oneline
+  work done by Akash-Khadka is shown.

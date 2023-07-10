@@ -1,0 +1,11 @@
+-open the project or folder folername "git" for an example.
+-add files two.txt and three.txt in "git" folder for example.
+
+-now enter git status:
+	it shows newly added files as untracked files
+-git add . (. brings all newly added files to staging area)
+-to chech what has been added enter
+	git diff --staged
+-then git commit -m "two.txt and three.txt added"
+-git push origin master
+-The newly added project files or folder files is now uploaded in github

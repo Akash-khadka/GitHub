@@ -1,0 +1,13 @@
+*Intermediate and advance concept
+
+-Creata new repository say "Calculator" for a project.
+-Create a project folder "Calculator" and open git bash
+-There can be many files inside project.
+-intialize : $ git init
+-check status: $ git status --nothing added to comit is shown
+-To take to staging are: $ git add . -- "." means all files
+-check status: $ git status --changes to be comitted shown
+-Now commit: $ git commit -m "Project Started"
+-Now to add to github: $ git remote add origin httplink
+			     $ git push origin master
+-Now the project can be seen on github.com

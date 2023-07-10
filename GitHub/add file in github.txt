@@ -1,0 +1,31 @@
+-create a repository "git" for an example in your github
+-create a folder "git" for example in your computer.
+-open the folder and "git bash here".
+-inside git bash initialize git using "git init". 
+-now create a file in "git" folder "one.txt" for an example.
+-"git status" to check the status of the file (the file is shown untracked)
+
+-Before adding file in git repository first, the local file should be brought to staging area and then only to repository.
+	
+-Now "add one.txt" in git bash (it shows no commits, changes to be committed yet). This brings your file to staging area.
+	-"git add filename1" : to add one file
+	-"git add filename1 filename2 : to add two files
+	-"git ." : to add all files
+
+-Before committing give your account and user information (only required once for a project)
+	$ git config --global user.email "ak9484490@gmail.com"
+	$ git config --global user.email "ak9484490@gmail.com"
+(Note: ctrl+L = clear screen)
+
+-Now commit the staging area
+	"git commit -m "first file uploaded(or any message)"
+
+-Now add origin i.e adding to repository
+	-from the git repository where the file is to be added in github copy and past
+	-"git remote add origin https://github.com/Akash-khadka/git.git"(you can get this link from code option form repository)
+	-the origin is added
+
+-Now push to repository
+	-"git push origin master"
+
+-The file is added to the repository

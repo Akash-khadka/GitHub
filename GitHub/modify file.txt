@@ -1,0 +1,26 @@
+Modify Files:
+-first modify the file in your local computer that has been added to github.
+-then
+	 git add "one.txt"//one.txt is the modified file name
+-then
+	 git commit -m "file updated"
+-the file has been updated in github
+
+Viewing Commit History(to return to previous file state or retrieve content of file from the past):
+-git log => View commit history
+	-using git log SHA value of commits is shown which is unique for each commit
+	-eg: commit c61e42b68b9b97aa9531150e1fd3d90f610f3ea0
+
+-git log --oneline => view commit history in one line
+	-eg: c61e42b first file added
+-These ids helps us to go to any commit we want or go to prevoius stage of file before updating.
+
+for example:
+	-After updating file one.txt it contains 
+	My name is Akash Khadka.(commit 1)	
+	I live in Budhanilkantha.(commit 2)
+	-Now to return to commit 1 i.e to display only 
+	My name is Akash Khadka is local computer file
+	- git checkout SHA value of commit 1 (i.e c61e42b68b9b97aa9531150e1fd3d90f610f3ea0 or c61e42b)
+	-then git checkout master	
+-This only changes the content of the file in local computer not in github.
