@@ -1,7 +1,0 @@
-Incase if the file or project is deleted:
--open github and repository containing that file
--click on clone and copy the https url
--open where you want to clone the repository or folder from github that has been deleted from local folder.
--open gitbash here and type
-	git clone https url
--The whole repository is cloned to local computer
