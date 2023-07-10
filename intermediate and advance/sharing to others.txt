@@ -64,6 +64,7 @@ Inside the repository
 -$ git pull origin master
 -All the works are displayed.
 
+**Important
 -If after pushing edited Address.txt to github.com, if any error occur in that file
 -Create a new branch and follow instructions above.
 
