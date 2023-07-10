@@ -22,5 +22,4 @@ for example:
 	-Now to return to commit 1 i.e to display only 
 	My name is Akash Khadka is local computer file
 	- git checkout SHA value of commit 1 (i.e c61e42b68b9b97aa9531150e1fd3d90f610f3ea0 or c61e42b)
-	-then git checkout master	
 -This only changes the content of the file in local computer not in github.
