@@ -18,3 +18,49 @@
    $git tag
 
 *******************
+
+*Adding new file for version2
+
+-Add a new file in project (mod_work.py) foe=r modulus calculation.
+-then $ git status -changes is shown
+-There may be cache file "_pycache" that has benn created inside the project folder
+ that are not meant to be pushed inside the repository
+-Created a new file and name it .gitignore and inside it write
+     _pucache_/ //now this file doesn't goto repository
+-To not add ".env" file that contains password in repository
+-Create hello.env and password.env file in the project
+  inside password.env
+	write your password "MyPassword" inside this file
+  inside .gitignore
+     *.env
+     !hello.env //except this env file others can't be stored in repository
+-$ git status
+   files to be committed:
+   .gitignore
+   hello.env
+   mod_work.py
+-$ git commit -am "Modulus work and git ignore work added"
+-push: $ git push origin master
+
+-Now ew can see password.env is not inserted while hello.env has been added
+ to repository.
+
+*****************************************
+
+*How to goto version1
+- $git checkout v.1
+
+-Files like gitignore, hello.env and mod_work.py has been deleted.
+
+-Now to publish version1
+  $ git checkout master
+  $ git push origin v.1 
+-Now we can see v1 tag inside tags in repository which can be downloaded as 
+ zip file
+
+-To delete
+  $ git tag -d v.1
+
+-To see who has done what work
+  $git log --author "Akash-Khadka" --oneline
+  work done by Akash-Khadka is shown.
