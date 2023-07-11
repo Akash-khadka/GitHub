@@ -1,0 +1,23 @@
+-A Git fork is nothing more than a copy of an existing repository, along with a change to the name of the
+folder in which that repository resides. 
+-The change to the folder name creates a new Git URL, 
+which makes the new repository immune from updates by developers who use the old URL to contribute to 
+the code base. 
+-That’s it. That’s all you need to do to fork a Git repository.
+
+
+wasadmin@CLASSPC MINGW64 /c/_repos
+$gh auth login --web
+
+!First copy your one-time code: 836B-21B6
+-Press Ente to open github.com in your browser
+ Authentication complete. Press Enter to Continue
+
+Logged in as cameronmcnz
+
+wasadmin@CLASSPC MINGW64 /c/_repos
+$gh repo fork https://github.com/learn-devops-fast/sopck-lizard-docker.git --clone
+ Created fork cameronmcnz/spock-lizard-docker
+cloning into 'spockk-lizard-docker'...
+remote: Enumerating objects: 628, done.
+............
