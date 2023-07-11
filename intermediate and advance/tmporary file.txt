@@ -1,0 +1,11 @@
+to store file temporarily
+-create a file billingwork.txt
+-$ git satus
+-$ git add (goes to staging area)
+-$ git stash save
+billing word is deleted
+
+-$ git stash pop
+recovers deleted stash
+or
+-$ git stash apply 

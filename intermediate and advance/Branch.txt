@@ -56,3 +56,8 @@
 -$ git push origin doc : A new branch is created on the repository i.e github
 -To see the list of branches
   $ git remote show origin //dislays all the branches present in the repository
+
+***************************
+*To delete branch from remote
+
+-$ git push origin --delete branchname

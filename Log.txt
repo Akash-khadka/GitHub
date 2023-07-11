@@ -1,6 +1,0 @@
--To see who has done what work
-
-  $git log to show all logs
-
-  $git log --author "Akash-Khadka" --oneline
-  work done by Akash-Khadka is shown.
