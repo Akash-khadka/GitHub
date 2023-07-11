@@ -1,0 +1,33 @@
+*Two person working on same file (Conflict may arise)
+ 
+ [Sender point of view]
+-If sender created new Country.txt, commits and upload to github.
+-And after uploading to github writes "Country" inside that file
+-The addition of "Nepal" in Country.txt is not commited and uploaded to github.
+ 
+ [Receiver point of view]
+-goto gitbash and: $ git pull origin master.
+-all the files are pulled along with empty file Country.txt.
+-Now receiver adds "India" to Country.txt.
+
+-Here 2 persons have edited the same file
+
+-Now the receiver add, commit and push Country.txt containing India
+ $ git commit -am "Content added to new file" //am means add and message
+ $ git push origin master
+-Now the changes is pushed in github.
+
+-Now the sender also add, commit and push Country.txt containing Nepal
+ $ git commit -am "Content added to new file"
+ $ git push origin master
+
+-A conflict can be seen as the file is already pushed with some content on it, we can
+ only edit those files by pulling files 
+-$ git pull origin master (from sender point of view)
+-$ you get the option in code editor either to save both changes or incomming changes or
+ save current change
+-Now as the file is changed you should add and commit again and push to github
+   $ git commit -am "new file conflict solved"
+   $ git push origin master
+
+

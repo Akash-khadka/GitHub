@@ -1,0 +1,48 @@
+*************BRANCH*****************
+- Now to work on a clonned file you must create a branch.
+(Advantage of creating a branch: you can edit project as you like in your branch, if the
+ feature or code works successfully you can merge your branch in main branch else delete the bracnh)
+- To create a branch: $git branch branchname(say Address for editing Address.txt file)
+- -Now to see the branches: $ git branch
+	it displays
+		*master //* means we are in master branch
+		Address // This identifies Address branch
+- Now go to Address branch: $ git checkout Address
+- Now we are on Address branch and we can work on any file and the main branch or 
+  main project wont be affected.
+- Now edit the Address.txt file and save.
+- Now goto Address branch and merge
+- check status: $ git status
+- add: $ git add .
+- commit: $ git commit -m "Address.txt changed"
+- Now if you goto master branch: $ git checkout master
+- You wont see the changes made in Address branch because changes are not made in master branch
+  so we should merge Address branch with master branch.
+- Goto branch you want to merge Address branch to i.e goto master branch
+- To merge:
+	-goto Address branch: $ git checkout Address
+	-$ git log --oneline and copy hash value of Address branch
+	-goto master branch: $ git checkout master
+	-$ git merge Address
+-Now $ git log ---oneline Now you can see the copied hash value of Address branch in master branch
+
+-NOTE: If you found that the code in Address.txt has some error ew can go back to previos commit
+	- $ git log --oneline //gives all commits hash value
+	- Copy the hash value of previous commit where you wnat to go then
+	- $ git reset --hard paste hash value(all or only 4 alphabets)
+	- we can see the changes previously made in Address.txt is gone
+
+-Now to edit another file create another branch and follow all the methods mention above.
+-To delete the branches
+	merged branches: $ git -d branchname
+	unmergerd branches: $ git -D branchname
+-Now push in github: $ git push origin master
+
+ [Again sender point of view]
+-To see the work done by others 
+-$ git pull origin master
+-All the works are displayed.
+
+**Important
+-If after pushing edited Address.txt to github.com, if any error occur in that file
+-Create a new branch and follow instructions above.
