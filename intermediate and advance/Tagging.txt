@@ -1,0 +1,20 @@
+*Tagging :  to make the project work
+
+-say there is main file called main.py where text "Akash khadka" has been inserted and 
+ has already been pushed to github
+-Now lets mofify the file and write a python program
+-Now goto master branch : $ git checkout master
+-$ git status --modified file found
+-$ git diff --shows "Akash Khadka" removed and code added is shown
+-commit: $ git commit -am "Main file done"
+
+-To see the result
+   $ python main.py
+    -The answer is displayed.
+
+-Now to pulish as a version 1 as one program is finished
+   $ git tag -a v.1 -m "Stable version published"
+-To see the tags
+   $git tag
+
+*******************
