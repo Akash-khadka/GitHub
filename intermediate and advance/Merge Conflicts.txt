@@ -1,0 +1,19 @@
+lets say we have abc.txt
+User1: 
+Creates a branch
+-$ git branch mybranch
+-perform modification in abc.txt
+-$ git add .
+-$ git commit -m ""
+
+User2:
+-perform modification on abc.txt
+-$ git add .
+-$ git commit -m ""
+-$ git push origin master
+
+Now User1 :
+-$ git merge mybranch
+merge conflict arise
+
+/////////study
