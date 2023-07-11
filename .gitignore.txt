@@ -1,0 +1,6 @@
+-This file is for demonstration of tagging (lets say this file is added in version2)
+
+-create a .gitignore file and write all the folders you want to exclude from commiting and pushing to git server
+-for eg: there is a folder named "pycached" which you want to ignore
+then write: 
+ _pycache_/ in .gitignore

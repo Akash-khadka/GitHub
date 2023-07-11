@@ -26,7 +26,9 @@
 -There may be cache file "_pycache" that has benn created inside the project folder
  that are not meant to be pushed inside the repository
 -Created a new file and name it .gitignore and inside it write
-     _pucache_/ //now this file doesn't goto repository
+     pycache/ --now this file doesn't goto repository
+     *.env
+     node_modules/
 -To not add ".env" file that contains password in repository
 -Create hello.env and password.env file in the project
   inside password.env
