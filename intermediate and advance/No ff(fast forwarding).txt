@@ -1,3 +1,6 @@
+--fast forwarding uses same hash id to merge from all branches, so we use no ff to generate unique hash id for 
+  merging new branches to master branch to any other branches
+
 [Sender pint of view]
 -Suppose you have created a new file in the project say description.txt
 -Create a new branch day doc

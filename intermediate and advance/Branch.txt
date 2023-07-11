@@ -46,3 +46,13 @@
 **Important
 -If after pushing edited Address.txt to github.com, if any error occur in that file
 -Create a new branch and follow instructions above.
+
+****************************************************************************************************
+
+*To send the branch in remote repository i.e in github
+
+-goto branch which you want to send to remote repository
+-$ git checkout doc //takes us to doc branch
+-$ git push origin doc : A new branch is created on the repository i.e github
+-To see the list of branches
+  $ git remote show origin //dislays all the branches present in the repository
