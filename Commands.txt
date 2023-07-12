@@ -1,0 +1,11 @@
+$ git count-objects -vH
+-Gives Repo information such as size, count etc
+
+$ git log 
+-to show all logs
+
+$ git log --author "Akash-Khadka" --oneline
+-work done by Akash-Khadka is shown.
+
+$ git log --stat --oneline --author "Aakash Khadka"
+-work done by Aakash Khadka in detail

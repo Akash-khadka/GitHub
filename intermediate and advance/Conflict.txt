@@ -24,7 +24,7 @@
 -A conflict can be seen as the file is already pushed with some content on it, we can
  only edit those files by pulling files 
 -$ git pull origin master (from sender point of view)
--$ you get the option in code editor either to save both changes or incomming changes or
+- you get the option in code editor either to save both changes or incomming changes or
  save current change
 -Now as the file is changed you should add and commit again and push to github
    $ git commit -am "new file conflict solved"
